@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray: #4F4F4F;
+    --black: #333333;
+    --white: #fff;
+    --Inconsolata: 'Inconsolata', monospace;
+    --Space: 'Space Mono', monospace;
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+body {
+    background-color: var(--white);
+    min-height: 100vh;
+    min-width: 375px;
+    max-width: 1980px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+span {
+    font-family: var(--Inconsolata);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--black);
+    line-height: 25px;
+    letter-spacing: -0.08em;
+}
+
+.container img {
+    max-width: 450px;
+    width: 90%;
+    margin: 3em auto 2em auto;
+}
+
+h1 {
+    font-family: var(--Space);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--black);
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-family: var(--Space);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--gray);
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    margin-bottom: 4em;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--Space);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--white);
+    background-color: var(--black);
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    padding: 1.5em 3em;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--black);
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7.5vw;
+        margin: 10% auto 0 auto;
+        max-width: 1400px;
+    }
+    
+    .container img {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .text {
+        max-width: 450px;
+    }
+
+    h1 {
+        font-size: 64px;
+        line-height: 95px;
+        letter-spacing: -0.035em;
+        margin-bottom: 0.5em;
+    }
+    
+    p {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 3em;
+    }
+    
+}
